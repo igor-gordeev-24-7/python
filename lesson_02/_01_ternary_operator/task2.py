@@ -4,5 +4,5 @@
 # Обработай регистр и случайные пробелы по краям.
 
 input_str = input("Введите роль: ")
-access = "полный доступ" if input_str == "admin" else "только чтение"
+access = "полный доступ" if input_str.lower().strip() == "admin" else "только чтение"
 print(access)
