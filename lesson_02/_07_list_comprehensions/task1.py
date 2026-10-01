@@ -15,10 +15,11 @@
 
 # Вариант 1: обычный цикл
 squares = []
-for i in range(1, 20):
-    squares.append(i ** 2)
+for number in range(1, 21):
+    if number % 2 == 0:
+        squares.append(number ** 2)
 print(squares)
 
 # Вариант 2: списковое включение
-result = [i ** 2 for i in range(1, 20)]
+result = [i ** 2 for i in range(1, 21) if i % 2 == 0]
 print(result)
