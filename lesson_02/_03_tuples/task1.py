@@ -18,4 +18,8 @@ screen_size = (1920, 1080)
 
 # Выполни задания
 width, height = screen_size
-print(width, height)
+print(f"Ширина: {width}, Высота: {height}")
+print(f"Количество пикселей: {width * height}")
+screen_size[0] = "1000"
+
+# TypeError: 'tuple' object does not support item assignment - кортежи не изменяются, по этому ошибка
