@@ -9,6 +9,7 @@
 notifications = ["Новый комментарий", "Файл загружен", "Пароль изменён"]
 
 # Выведи нумерованный список
-print(list(enumerate(notifications)))
+for index, value in enumerate(notifications):
+    print(f"{index}: {value}")
 
 
