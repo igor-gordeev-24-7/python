@@ -29,7 +29,7 @@ device["ram"] = 32
 device["os"] = "Linux"
 
 # Получи ключ ip через get(). Если ключа нет, выведи "IP не назначен".
-ip = device.get("online", "IP не назначен")
+ip = device.get("ip", "IP не назначен")
 print(ip)
 
 # Проверь через in, есть ли ключ online.
