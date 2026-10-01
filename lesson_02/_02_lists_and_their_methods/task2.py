@@ -8,7 +8,7 @@
 
 sizes = [120, 45, 890, 310, 76]
 
-max_value = 0;
+max_value = sizes[0];
 
 # Найди максимальный размер
 for size in sizes:

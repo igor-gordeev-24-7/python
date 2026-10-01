@@ -18,11 +18,16 @@ all_users.sort()
 print(all_users)
 
 # Пользователей обоих сервисов.
-all_users = music_users & cloud_users
+all_users = list(music_users & cloud_users)
+all_users.sort()
 print(all_users)
 
 # Пользователей только музыкального сервиса.
-print(music_users - cloud_users)
+sort_users = list(music_users - cloud_users)
+all_users.sort()
+print(sort_users)
 
 # Пользователей, использующих ровно один из сервисов.
-print(cloud_users ^ music_users)
+sort_users = list(cloud_users ^ music_users)
+all_users.sort()
+print(sort_users)

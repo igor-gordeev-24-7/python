@@ -127,9 +127,9 @@
 # close_count = 0
 # high_priority_count = 0
 # for ticket in tickets:
-#     if ticket['closed']: open_count += 1
-#     if not ticket['closed']: close_count += 1
-#     if ticket['priority'] == 'high': high_priority_count += 1
+#     if not ticket['closed']: open_count += 1
+#     if ticket['closed']: close_count += 1
+#     if ticket['priority'] == 'high' and not ticket['closed']: high_priority_count += 1
 #
 # print(f"Общее количество {all_tickets_count}")
 # print(f"Количество открытых {open_count}")
@@ -188,31 +188,27 @@ while end_of_cycle:
             print("Список обращений пуст")
         for ticket in tickets:
             print("Список всех обращений")
-            print(f"Название: {ticket['title']}, Статус: {'закрыто' if ticket['closed'] else 'открыто'}, Приоритет - ticket['priority']")
-        break
+            print(f"Название: {ticket['title']}, Статус: {'закрыто' if ticket['closed'] else 'открыто'}, Приоритет - {ticket['priority']}")
 
     if input_number == "2":
-        print("Список закрытых обращений:")
+        print("Список открытых обращений:")
         found = False
         for ticket in tickets:
             if ticket['closed']:
                 found = True
-                print(f"Название: {ticket['title']}, Статус: {'закрыто' if ticket['closed'] else 'открыто'}, Приоритет - ticket['priority']")
+                print(f"Название: {ticket['title']}, Статус: {'закрыто' if ticket['closed'] else 'открыто'}, Приоритет - {ticket['priority']}")
         if found:
-            print("Список закрытых обращений пуст")
-        break
+            print("Список открытых обращений пуст")
 
     if input_number == "3":
-        input_id = "Введите id"
+        input_id = int(input("Введите id: "))
         found = False
         for ticket in tickets:
             if ticket['id'] == input_id:
                 found = True
-                print(f"Название: {ticket['title']}, Статус: {'закрыто' if ticket['closed'] else 'открыто'}, Приоритет - ticket['priority']")
-                break
+                print(f"Название: {ticket['title']}, Статус: {'закрыто' if ticket['closed'] else 'открыто'}, Приоритет - {ticket['priority']}")
         if not found:
             print("Обращение не найдено")
-        break
 
     if input_number == "4":
         search_id = int(input("Введите id: "))
@@ -225,10 +221,8 @@ while end_of_cycle:
                 else:
                     ticket['closed'] = True
                     print(f"Обращение «{ticket['title']}» закрыто")
-                break
         if not found:
             print("Обращение не найдено")
-        break
 
 
     if input_number == "5":
@@ -238,12 +232,11 @@ while end_of_cycle:
         for ticket in tickets:
             if ticket['id'] == new_id:
                 id_exists = True
-                break
 
         if id_exists:
             print("Обращение с таким id уже существует")
         else:
-            title = input("Введите название: ")
+            title = input("Введите название: ").strip()
             priority = input("Введите приоритет (low, medium, high): ")
 
             if priority not in ["low", "medium", "high"]:
@@ -256,7 +249,6 @@ while end_of_cycle:
                     "priority": priority
                 })
                 print(f"Обращение «{title}» добавлено")
-        break
 
 
 
