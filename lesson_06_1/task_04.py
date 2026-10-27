@@ -1,9 +1,12 @@
+import sys
+
 query = input("Введите слово или фразу для поиска: ").strip()
 
 found_count = 0
 
 if query == "":
     print("Пустой запрос")
+    sys.exit()
 
 query_lower = query.lower()
 
