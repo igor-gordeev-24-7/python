@@ -116,3 +116,7 @@ while not end:
             print(f'Удалена игра: {removed["title"]} (id={id})\n')
         else:
             print(f"Игра с id={id} не найдена.\n")
+
+    if choice == 0:
+        print("Программа завершена")
+        end = True
