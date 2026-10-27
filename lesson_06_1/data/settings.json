@@ -1,0 +1,11 @@
+{
+    "language": "ru",
+    "theme": "dark",
+    "notifications": true,
+    "items_per_page": 20,
+    "favorite_sections": [
+        "Обучение",
+        "Проекты"
+    ]
+}
+
