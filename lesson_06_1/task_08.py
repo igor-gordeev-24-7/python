@@ -113,7 +113,7 @@ while not end:
         id = read_int("Введите id для удаления: ")
         removed = delete_game(id)
         if removed:
-            print(f'Удалена игра: {removed["title"]} (id={id})\n')
+            print(f'Удалена игра')
         else:
             print(f"Игра с id={id} не найдена.\n")
 

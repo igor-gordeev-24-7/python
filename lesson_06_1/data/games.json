@@ -1,13 +1,5 @@
 [
     {
-        "id": 2,
-        "title": "Counter-Strike 2",
-        "genre": "Shooter",
-        "players": 10,
-        "rating": 8.5,
-        "available": true
-    },
-    {
         "id": 3,
         "title": "Minecraft",
         "genre": "Sandbox",
