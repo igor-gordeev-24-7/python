@@ -104,7 +104,7 @@ while not end:
         status = change_status(id)
         if not status:
             print(f"Статус не изменен")
-
+            continue
         print(f"Статус по id {id}, изменен")
 
 
