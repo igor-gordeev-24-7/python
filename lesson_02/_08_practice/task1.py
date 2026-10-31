@@ -197,7 +197,7 @@ while end_of_cycle:
             if not ticket['closed']:
                 found = True
                 print(f"Название: {ticket['title']}, Статус: {'закрыто' if ticket['closed'] else 'открыто'}, Приоритет - {ticket['priority']}")
-        if found:
+        if not found:
             print("Список открытых обращений пуст")
 
     if input_number == "3":
