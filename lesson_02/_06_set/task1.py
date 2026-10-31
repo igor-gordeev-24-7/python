@@ -24,10 +24,10 @@ print(all_users)
 
 # Пользователей только музыкального сервиса.
 sort_users = list(music_users - cloud_users)
-all_users.sort()
+sort_users.sort()
 print(sort_users)
 
 # Пользователей, использующих ровно один из сервисов.
 sort_users = list(cloud_users ^ music_users)
-all_users.sort()
+sort_users.sort()
 print(sort_users)
