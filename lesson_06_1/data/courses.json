@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Python",
+        "students": 24,
+        "rating": 4.8
+    },
+    {
+        "title": "SQL",
+        "students": 18,
+        "rating": 4.6
+    },
+    {
+        "title": "Docker",
+        "students": 15,
+        "rating": 4.7
+    },
+    {
+        "title": "Linux",
+        "students": 20,
+        "rating": 4.4
+    }
+]
