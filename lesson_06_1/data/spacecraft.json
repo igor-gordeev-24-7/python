@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Voyager 1",
+        "country": "США",
+        "launch_year": 1977,
+        "active": true
+    },
+    {
+        "id": 2,
+        "name": "Луна-25",
+        "country": "Россия",
+        "launch_year": 2023,
+        "active": false
+    },
+    {
+        "id": 3,
+        "name": "Voyager 2",
+        "country": "Россия",
+        "launch_year": 2023,
+        "active": false
+    }
+]
